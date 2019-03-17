@@ -10,6 +10,7 @@ function Library(name, creator) {
 }
 
 // Playlist constructor function declaration
+// Playlist has 'name' as string
 function Playlist(name) {
   this.name = name;
 }
