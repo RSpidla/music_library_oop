@@ -16,3 +16,13 @@ function Playlist(name) {
   this.name = name;
   this.tracks = [];
 }
+
+// Track constructor function declaration
+// Track has 'title' as string
+// Track has 'rating' as integer
+// Track has 'length' as integer
+function Track(title, rating, length) {
+  this.title = title;
+  this.rating = rating;
+  this.length = length;
+}
