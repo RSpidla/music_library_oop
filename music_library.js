@@ -20,10 +20,21 @@ function Playlist(name) {
 // 'overallRating' function expression
 // 'overallRating' calculates the rating by averaging the rating of each track
 Playlist.prototype.overallRating = function() {
+  let overallRating = 0;
   this.tracks.forEach((track) => {
     overallRating += track.rating;
   });
   return overallRating / this.tracks.length;
+};
+
+// 'totalDuration' function expression
+// 'totalDuration' sums the duration of all of its tracks
+Playlist.prototype.totalDuration = function() {
+  let totalDuration = 0;
+  this.tracks.forEach((track) => {
+    totalDuration += track.length;
+  });
+  return totalDuration;
 };
 
 // Track constructor function declaration
@@ -35,4 +46,3 @@ function Track(title, rating, length) {
   this.rating = rating;
   this.length = length;
 }
-
