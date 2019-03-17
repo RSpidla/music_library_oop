@@ -9,8 +9,6 @@ function Library(name, creator) {
   this.playlists = [];
 }
 
-// Library prototype function declaration
-
 // Playlist constructor function declaration
 function Playlist(name) {
   this.name = name;
