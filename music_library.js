@@ -11,6 +11,8 @@ function Library(name, creator) {
 
 // Playlist constructor function declaration
 // Playlist has 'name' as string
+// Playlist has 'tracks' as empty array
 function Playlist(name) {
   this.name = name;
+  this.tracks = [];
 }
